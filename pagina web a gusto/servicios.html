@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .producto {
+            background-color: #daa2c9be;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 40px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+        }
+
+        .producto img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 14px;
+            margin-bottom: 12px;
+        }
+
+        .producto h3 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .producto p {
+            margin: 0;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .producto {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .producto {
+                width: calc(100% - 40px);
+            }
+        }
+		/* incio cabecera*/
+.cabecera{
+	background:#daa2c9be;
+	width:100%;
+	height: 150px;
+	
+}
+
+.cabecera_link{
+	width:100%;
+	height: 100%;
+	display:flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items: center;
+	text-decoration:none;
+	color: black;
+	font-size:20px;
+	font-weight: 600;
+
+}
+
+.cabecera_img{
+	object-fit: cover;
+	height: 90%;
+	margin-right: 10px;
+}
+
+.cabecera h1{
+	font-size:75px;
+	text-align:center;
+}
+/* fin cabecera*/
+
+
+/* incio navegacion*/
+.navegacion{
+	background-color: #ffffff;
+	width:100%;
+	height: 60px;
+	padding: 0 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items:center;
+	
+}
+ .navegacion a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	font-weight:600;
+	padding:25px 50px;
+}
+
+ .navegacion a:hover{
+	color: #000000;
+	background-color: #94bff400;
+	
+}
+/* fin navegacion*/
+
+:root {
+    --green: hsl(320, 62%, 61%);
+    --lead: hsl(278, 100%, 71%);
+    --blue: hsl(340, 88%, 68%);
+    --violet: hsl(340, 88%, 68%);
+    --tex-white:hsl(0, 0%, 0%);
+    --tex-light-gray: hsl(0,0%,90%);
+    --body-bg-color: hsl(0, 0%, 91%);
+    --glass-bg-color:hsla(0, 0%, 100%,0.05);
+    --border-color: hsla(0, 0%, 100%,0.25);
+    --blur: blur(10px);
+    --button-hover-color: hsla(0, 0%, 0%,0.3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    body{
+        background-color: var(--body-bg-color);
+        color:  var(--text-light-gray); 
+        font-family:'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.5;
+        overflow-x: hidden;
+         }
+         body::after,
+         body::before{
+            content: '';
+            position: fixed;
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(150px);
+            opacity: 0.5;
+         }
+         body::before{
+            background-color: var(--blue);
+            left: 0;
+            bottom: 0;
+            transform: translate(-50%);
+         }
+         body::after{
+            background-color: var(--violet);
+            right: 0;
+            top: 0;
+            transform: translate(50%);
+			
+
+    </style>
+</head>
+<body>
+<main class="main">
+    <header class="cabecera">
+		     <a href="" class="cabecera_link"><img src="imagenes de pagina/anilogo.jpg" alt="logo " class="cabecera_img">
+		<div><h1>Anxpex</h1>
+		</div>
+		</a>
+    </header>
+    <!--botones van aqui-->
+   <nav class="navegacion">
+    <a href="inicios.html">Inicio</a>
+    <a href="inicio de sesion.html">Iniciar Sesión</a>
+    <a href="acerca de.html">acerca de</a>
+    <a href="contactanos.html">Contactanos</a>
+   </nav>
+<!--botones van aqui-->
+    <div class="catalogo">
+        <div class="producto">
+            <img src="imagenes de pagina/increible castillo.jpeg" alt="Producto 1">
+            <h3>El increíble castillo vagabundo</h3>
+            <p>Después de que una bruja (Lauren Bacall) la transforma en una anciana, una fabricante (Jean Simmons) de sombreros busca refugio en la casa ambulante de un singular mago (Christian Bale).</p>
+            <A HREF="https://www3.animeflv.net/anime/howl-no-ugoku-shiro">EL INCREIBLE CASTILLO VAGABUNDO</A>
+        </div>
+        <div class="producto">
+            <img src="imagenes de pagina/totoro.jpeg" alt="Producto 2">
+            <h3>Mi vecino Totoro.</h3>
+            <p>Esta historia animada del director Hayao Miyazaki sigue a las estudiantes y hermanas Satsuke y Mei mientras se establecen en su casa de campo con su padre y esperan a que su madre se recupere de una enfermedad en un hospital del área. Cuando las hermanas exploran su nueva casa, descubren y hacen amistad con unos duendes juguetones, y en el bosque cercano encuentran a una enorme criatura conocida como Totoro.</p>
+            <A HREF="https://www3.animeflv.net/anime/tonari-no-totoro">MI VECINO TOTORO</A>
+        </div>
+        <div class="producto">
+            <img src="imagenes de pagina/chihiro.jpeg" alt="Producto 3">
+            <h3>El viaje de Chihiro</h3>
+            <p>Chihiro es una niña caprichosa que debe adentrarse en un mundo de fantasía para poder salvar a sus padres, convertidos en cerdos.</p>
+            <A HREF="https://www3.animeflv.net/anime/sen-to-chihiro-no-kamikakushi">EL VIAJE DE Chihiro</A>
+        </div>
+        </div>
+		
+	
+	
+</body>
+</html>

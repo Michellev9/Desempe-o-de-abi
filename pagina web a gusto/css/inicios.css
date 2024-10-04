@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #daa2c9be;
+    padding: 20px;
+    text-align: center;
+}
+
+.cabecera{
+	background:#daa2c9be;
+	width:100%;
+	height: 150px;
+	
+}
+
+.cabecera_link{
+	width:100%;
+	height: 100%;
+	display:flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items: center;
+	text-decoration:none;
+	color: black;
+	font-size:20px;
+	font-weight: 600;
+
+}
+
+.cabecera_img{
+	object-fit: cover;
+	height: 90%;
+	margin-right: 10px;
+}
+
+.cabecera h1{
+	font-size:75px;
+	text-align:center;
+}
+.logo {
+    font-size:75px;
+	text-align:center;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.banner {
+    text-align: center;
+	
+}
+
+.banner img {
+    width: 100%;
+    height: 800px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Para que la imagen se ajuste y cubra el contenedor */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregamos una sombra suave */
+    margin-bottom: 20px;
+}
+
+.section-container {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.section-title, .gallery-title {
+    text-align: center;
+    margin-bottom: 20px;
+	 background-color: #daa2c9be;
+	  height: 50px;
+	  font-size: 30px;
+}
+
+.section-items, .bottom-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-item, .bottom-item {
+    background-color: #daa2c9be;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: justify;
+    overflow: hidden;
+	font-size: 25px
+	
+}
+
+.section-item img, .bottom-item img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.section-item {
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+.left-item {
+    flex: 0 0 calc(33.33% - 10px);
+}
+
+.right-item {
+    flex: 0 0 calc(66.67% - 10px);
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.33% - 10px);
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
